@@ -9,6 +9,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/fd5406419a.js" crossorigin="anonymous"></script>
   </head>
 
   <body style="background-color:#E3E3DE;">
@@ -32,12 +33,14 @@
             <% elsif admin_signed_in? %>
               <%= link_to "ログアウト", destroy_admin_session_path, method: :delete,class: 'nav-link ' %>
             <% else %>
-              <h4>
-                <%= link_to '新規登録',new_user_registration_path,class: 'nav-link'%>
-              </h4>
-              <h4>
-                <%= link_to "ログイン", new_user_session_path,class: 'nav-link' %>  <i class="fa-solid fa-right-to-bracket"></i>
-              </h4>
+              <%= link_to new_user_registration_path,class: "nav-link" do %>
+                <h4><i class="fa-solid fa-user-plus"></i> 新規登録</h4>
+              <%end%>
+              
+              <%= link_to new_user_session_path,class: "nav-link" do %>
+                <h4><i class="fa-solid fa-right-to-bracket"></i> ログイン</h4>
+              <%end%>
+
             <% end %>
             
             

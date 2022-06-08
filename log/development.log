@@ -1713,3 +1713,551 @@ Processing by HomesController#top as HTML
 Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 5134)
 
 
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:20:20 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 241)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.18
+info If you think this is a bug, please open a bug report with the information provided in "/home/ec2-user/environment/Utobeer/yarn-error.log".
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error An unexpected error occurred: "/home/ec2-user/environment/Utobeer/package.json: Unexpected token < in JSON at position 62".
+error An unexpected error occurred: "/home/ec2-user/environment/Utobeer/package.json: Unexpected token < in JSON at position 62".
+
+  Rendered layout layouts/application.html.erb (Duration: 1089.3ms | Allocations: 9508)
+Completed 200 OK in 1104ms (Views: 1093.4ms | ActiveRecord: 0.0ms | Allocations: 12401)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:20:50 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 8349)
+Completed 200 OK in 42ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 11242)
+
+
+Started GET "/users/sign_in" for 118.83.57.99 at 2022-06-08 03:20:52 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by User::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/sessions/new.html.erb within layouts/application
+  Rendered user/shared/_links.html.erb (Duration: 4.2ms | Allocations: 927)
+  Rendered user/sessions/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 5007)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 9289)
+Completed 200 OK in 48ms (Views: 33.3ms | ActiveRecord: 0.3ms | Allocations: 15788)
+
+
+Started GET "/users/sign_up" for 118.83.57.99 at 2022-06-08 03:20:53 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by User::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/registrations/new.html.erb within layouts/application
+  Rendered user/shared/_links.html.erb (Duration: 0.4ms | Allocations: 161)
+  Rendered user/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | Allocations: 5530)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 8066)
+
+
+Started GET "/users/sign_up" for 118.83.57.99 at 2022-06-08 03:21:22 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by User::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/registrations/new.html.erb within layouts/application
+  Rendered user/shared/_links.html.erb (Duration: 0.8ms | Allocations: 523)
+  Rendered user/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1617)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 6398)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms | Allocations: 8410)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:21:23 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 120)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 4908)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms | Allocations: 6125)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:21:24 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 4356)
+Completed 200 OK in 57ms (Views: 56.7ms | ActiveRecord: 0.0ms | Allocations: 4738)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:22:06 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 30.6ms | Allocations: 8346)
+Completed 200 OK in 55ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 11239)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:22:50 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 8351)
+Completed 200 OK in 45ms (Views: 33.5ms | ActiveRecord: 0.0ms | Allocations: 11244)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:26:52 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.5ms | Allocations: 243)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2056)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 4923)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html style="position: relative; min-height: 100%;">
+  <head>
+    <title>Utobeer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/fd5406419a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body style="background-color:#E3E3DE;">
+    <nav class="navbar navbar-expand-lg navbar-light d-print" style="background-color:#D2C786;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <%= link_to root_path do %>
+            <%= image_tag 'logo.png', :size => '200×62' %>
+          <%end%>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <% if user_signed_in? %>
+              <h4>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete,class: 'nav-link' %>
+              </h4>
+            <% elsif admin_signed_in? %>
+              <%= link_to "ログアウト", destroy_admin_session_path, method: :delete,class: 'nav-link ' %>
+            <% else %>
+              <h4>
+                <%= link_to '新規登録',new_user_registration_path,class: 'nav-link'%>
+              </h4>
+              
+              <%= link_to new_user_registration_path,class: 'nav-link'do%>
+                <h4>新規登録</h4><i class="fa-solid fa-right-to-bracket"></i>
+              <%end
+              
+              <h4>
+                <%= link_to "ログイン", new_user_session_path,class: 'nav-link' %>  
+              </h4>
+            <% end %>
+            
+            
+          </ul>
+        </div>
+    </nav>
+      
+    <main style="background-color:#E3E3DE; ">
+      <div class="container mt-4" style="padding-bottom:50px;">
+        <%= yield %>
+      </div>
+    </main>
+    
+    
+    <footer class="text-center" style="position: absolute; bottom: 0;width: 100%;height: 60px;background-color:#F0F3F5;">
+    </footer>　
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html style="position: relative; min-height: 100%;">
+3:      <head>
+4:        <title>Utobeer</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+12:        <script src="https://kit.fontawesome.com/fd5406419a.js" crossorigin="anonymous"></script>
+13:      </head>
+14:    
+15:      <body style="background-color:#E3E3DE;">
+16:        <nav class="navbar navbar-expand-lg navbar-light d-print" style="background-color:#D2C786;">
+17:          <div class="container-fluid">
+18:            <a class="navbar-brand" href="/">
+19:              <%= link_to root_path do %>
+20:                <%= image_tag 'logo.png', :size => '200×62' %>
+21:              <%end%>
+22:            </a>
+23:            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+24:              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+25:              <span class="navbar-toggler-icon"></span>
+26:            </button>
+27:            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+28:              <ul class="navbar-nav ml-auto">
+29:                <% if user_signed_in? %>
+30:                  <h4>
+31:                    <%= link_to "ログアウト", destroy_user_session_path, method: :delete,class: 'nav-link' %>
+32:                  </h4>
+33:                <% elsif admin_signed_in? %>
+34:                  <%= link_to "ログアウト", destroy_admin_session_path, method: :delete,class: 'nav-link ' %>
+35:                <% else %>
+36:                  <h4>
+37:                    <%= link_to '新規登録',new_user_registration_path,class: 'nav-link'%>
+38:                  </h4>
+39:                  
+40:                  <%= link_to new_user_registration_path,class: 'nav-link'do%>
+41:                    <h4>新規登録</h4><i class="fa-solid fa-right-to-bracket"></i>
+42:                  <%end
+43:                  
+44:                  <h4>
+45:                    <%= link_to "ログイン", new_user_session_path,class: 'nav-link' %>  
+46:                  </h4>
+47:                <% end %>
+48:                
+49:                
+50:              </ul>
+51:            </div>
+52:        </nav>
+53:          
+54:        <main style="background-color:#E3E3DE; ">
+55:          <div class="container mt-4" style="padding-bottom:50px;">
+56:            <%= yield %>
+57:          </div>
+58:        </main>
+59:        
+60:        
+61:        <footer class="text-center" style="position: absolute; bottom: 0;width: 100%;height: 60px;background-color:#F0F3F5;">
+62:        </footer>　
+63:      </body>
+64:    </html>
+  
+app/views/layouts/application.html.erb:40: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:44: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:47: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:40: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:44: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:47: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:40: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:44: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:47: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:40: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:44: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:47: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:40: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:44: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:47: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:67: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:40: syntax error, unexpected ')'
+app/views/layouts/application.html.erb:44: syntax error, unexpected '<', expecting ')'
+app/views/layouts/application.html.erb:47: syntax error, unexpected end, expecting ')'
+app/views/layouts/application.html.erb:67: syntax error, unexpected end, expecting ')'
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:27:41 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.5ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 8444)
+Completed 200 OK in 55ms (Views: 44.0ms | ActiveRecord: 0.0ms | Allocations: 11337)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:28:16 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 1.8ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4997)
+Completed 200 OK in 40ms (Views: 32.7ms | ActiveRecord: 0.0ms | Allocations: 6208)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:28:32 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 4995)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 6202)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:30:27 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 1.1ms | Allocations: 243)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2067)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 4934)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html style="position: relative; min-height: 100%;">
+  <head>
+    <title>Utobeer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/fd5406419a.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body style="background-color:#E3E3DE;">
+    <nav class="navbar navbar-expand-lg navbar-light d-print" style="background-color:#D2C786;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <%= link_to root_path do %>
+            <%= image_tag 'logo.png', :size => '200×62' %>
+          <%end%>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <% if user_signed_in? %>
+              <h4>
+                <%= link_to "ログアウト", destroy_user_session_path, method: :delete,class: 'nav-link' %>
+              </h4>
+            <% elsif admin_signed_in? %>
+              <%= link_to "ログアウト", destroy_admin_session_path, method: :delete,class: 'nav-link ' %>
+            <% else %>
+              <%= link_to new_user_registration_path,class: "nav-link" do %>
+                <h4><i class="fa-solid fa-right-to-bracket"></i> 新規登録</h4>
+              <%end%>
+              
+              <%= link_tonew_user_session_path,class: "nav-link" do %>
+                <h4><i class="fa-solid fa-right-to-bracket"></i> ログイン</h4>
+              <%end%>
+
+            <% end %>
+            
+            
+          </ul>
+        </div>
+    </nav>
+      
+    <main style="background-color:#E3E3DE; ">
+      <div class="container mt-4" style="padding-bottom:50px;">
+        <%= yield %>
+      </div>
+    </main>
+    
+    
+    <footer class="text-center" style="position: absolute; bottom: 0;width: 100%;height: 60px;background-color:#F0F3F5;">
+    </footer>　
+  </body>
+</html>
+
+):
+1:    <!DOCTYPE html>
+2:    <html style="position: relative; min-height: 100%;">
+3:      <head>
+4:        <title>Utobeer</title>
+5:        <meta name="viewport" content="width=device-width,initial-scale=1">
+6:        <%= csrf_meta_tags %>
+7:        <%= csp_meta_tag %>
+8:    
+9:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+10:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+11:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+12:        <script src="https://kit.fontawesome.com/fd5406419a.js" crossorigin="anonymous"></script>
+13:      </head>
+14:    
+15:      <body style="background-color:#E3E3DE;">
+16:        <nav class="navbar navbar-expand-lg navbar-light d-print" style="background-color:#D2C786;">
+17:          <div class="container-fluid">
+18:            <a class="navbar-brand" href="/">
+19:              <%= link_to root_path do %>
+20:                <%= image_tag 'logo.png', :size => '200×62' %>
+21:              <%end%>
+22:            </a>
+23:            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+24:              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+25:              <span class="navbar-toggler-icon"></span>
+26:            </button>
+27:            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+28:              <ul class="navbar-nav ml-auto">
+29:                <% if user_signed_in? %>
+30:                  <h4>
+31:                    <%= link_to "ログアウト", destroy_user_session_path, method: :delete,class: 'nav-link' %>
+32:                  </h4>
+33:                <% elsif admin_signed_in? %>
+34:                  <%= link_to "ログアウト", destroy_admin_session_path, method: :delete,class: 'nav-link ' %>
+35:                <% else %>
+36:                  <%= link_to new_user_registration_path,class: "nav-link" do %>
+37:                    <h4><i class="fa-solid fa-right-to-bracket"></i> 新規登録</h4>
+38:                  <%end%>
+39:                  
+40:                  <%= link_tonew_user_session_path,class: "nav-link" do %>
+41:                    <h4><i class="fa-solid fa-right-to-bracket"></i> ログイン</h4>
+42:                  <%end%>
+43:    
+44:                <% end %>
+45:                
+46:                
+47:              </ul>
+48:            </div>
+49:        </nav>
+50:          
+51:        <main style="background-color:#E3E3DE; ">
+52:          <div class="container mt-4" style="padding-bottom:50px;">
+53:            <%= yield %>
+54:          </div>
+55:        </main>
+56:        
+57:        
+58:        <footer class="text-center" style="position: absolute; bottom: 0;width: 100%;height: 60px;background-color:#F0F3F5;">
+59:        </footer>　
+60:      </body>
+61:    </html>
+  
+app/views/layouts/application.html.erb:40: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:40: syntax error, unexpected do, expecting end
+app/views/layouts/application.html.erb:64: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:40: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:40: syntax error, unexpected do, expecting end
+app/views/layouts/application.html.erb:64: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:40: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:40: syntax error, unexpected do, expecting end
+app/views/layouts/application.html.erb:64: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:40: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:40: syntax error, unexpected do, expecting end
+app/views/layouts/application.html.erb:64: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:40: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:40: syntax error, unexpected do, expecting end
+app/views/layouts/application.html.erb:64: syntax error, unexpected end, expecting end-of-input
+app/views/layouts/application.html.erb:40: syntax error, unexpected tLABEL
+app/views/layouts/application.html.erb:40: syntax error, unexpected do, expecting end
+app/views/layouts/application.html.erb:64: syntax error, unexpected end, expecting end-of-input
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:30:51 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 8276)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms | Allocations: 9596)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:31:32 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 1.0ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4957)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 6168)
+
+
+Started GET "/users/sign_up" for 118.83.57.99 at 2022-06-08 03:31:55 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by User::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/registrations/new.html.erb within layouts/application
+  Rendered user/shared/_links.html.erb (Duration: 4.0ms | Allocations: 836)
+  Rendered user/registrations/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 2413)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 6705)
+Completed 200 OK in 43ms (Views: 29.0ms | ActiveRecord: 0.3ms | Allocations: 12959)
+
+
+Started GET "/users/sign_up" for 118.83.57.99 at 2022-06-08 03:32:26 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by User::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/registrations/new.html.erb within layouts/application
+  Rendered user/shared/_links.html.erb (Duration: 0.8ms | Allocations: 523)
+  Rendered user/registrations/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1618)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 6458)
+Completed 200 OK in 32ms (Views: 30.3ms | ActiveRecord: 0.0ms | Allocations: 8482)
+
+
+Started GET "/users/sign_up" for 118.83.57.99 at 2022-06-08 03:32:47 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by User::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/registrations/new.html.erb within layouts/application
+  Rendered user/shared/_links.html.erb (Duration: 0.7ms | Allocations: 523)
+  Rendered user/registrations/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1625)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 6459)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms | Allocations: 8493)
+
+
+Started GET "/users/sign_in" for 118.83.57.99 at 2022-06-08 03:32:48 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by User::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/sessions/new.html.erb within layouts/application
+  Rendered user/shared/_links.html.erb (Duration: 0.5ms | Allocations: 256)
+  Rendered user/sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 3848)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 8135)
+Completed 200 OK in 28ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 9924)
+
+
