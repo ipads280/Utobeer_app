@@ -250,3 +250,34 @@ Completed 200 OK in 6110ms (Views: 6081.5ms | ActiveRecord: 0.0ms | Allocations:
 >>>>>>> ffc9af619978649d990915f3caf3d6cb62f29da9
 
 
+Started GET "/" for 118.83.57.99 at 2022-06-08 01:39:08 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 242)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ec2-user/environment/Utobeer/public/packs
+[Webpacker] warning ../../package.json: No license field
+
+[Webpacker] Hash: 50e3bf4ccc35a838f1be
+Version: webpack 4.46.0
+Time: 1347ms
+Built at: 06/08/2022 1:39:11 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-7d583ba8e3595cd67db2.js    125 KiB  application  [emitted] [immutable]  application
+js/application-7d583ba8e3595cd67db2.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-7d583ba8e3595cd67db2.js js/application-7d583ba8e3595cd67db2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 492 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+  Rendered layout layouts/application.html.erb (Duration: 3498.2ms | Allocations: 7383)
+Completed 200 OK in 3514ms (Views: 3502.8ms | ActiveRecord: 0.0ms | Allocations: 10276)
+
+
