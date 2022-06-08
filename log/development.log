@@ -1726,3 +1726,62 @@ Processing by User::RegistrationsController#new as HTML
 Completed 200 OK in 24ms (Views: 21.9ms | ActiveRecord: 0.0ms | Allocations: 7080)
 
 
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:11:49 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 242)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.18
+info If you think this is a bug, please open a bug report with the information provided in "/home/ec2-user/environment/Utobeer/yarn-error.log".
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error An unexpected error occurred: "/home/ec2-user/environment/Utobeer/package.json: Unexpected token < in JSON at position 62".
+error An unexpected error occurred: "/home/ec2-user/environment/Utobeer/package.json: Unexpected token < in JSON at position 62".
+
+  Rendered layout layouts/application.html.erb (Duration: 1445.7ms | Allocations: 9510)
+Completed 200 OK in 1468ms (Views: 1450.1ms | ActiveRecord: 0.0ms | Allocations: 12403)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-08 03:14:48 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 242)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 54.9ms | Allocations: 8348)
+Completed 200 OK in 106ms (Views: 67.2ms | ActiveRecord: 0.0ms | Allocations: 11241)
+
+
+Started GET "/users/sign_in" for 118.83.57.99 at 2022-06-08 03:14:51 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by User::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/sessions/new.html.erb within layouts/application
+  Rendered user/shared/_links.html.erb (Duration: 9.0ms | Allocations: 927)
+  Rendered user/sessions/new.html.erb within layouts/application (Duration: 24.5ms | Allocations: 5007)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 9287)
+Completed 200 OK in 78ms (Views: 57.7ms | ActiveRecord: 0.3ms | Allocations: 15778)
+
+
+Started GET "/users/sign_up" for 118.83.57.99 at 2022-06-08 03:14:51 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by User::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering user/registrations/new.html.erb within layouts/application
+  Rendered user/shared/_links.html.erb (Duration: 0.4ms | Allocations: 161)
+  Rendered user/registrations/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1251)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 5530)
+Completed 200 OK in 33ms (Views: 32.3ms | ActiveRecord: 0.0ms | Allocations: 7091)
+
+
