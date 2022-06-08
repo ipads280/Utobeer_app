@@ -16,11 +16,6 @@ Completed 200 OK in 45ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 325
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-<<<<<<< HEAD
-Started GET "/" for 118.83.57.99 at 2022-06-08 01:25:28 +0000
-Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-=======
 Started GET "/" for 118.83.57.99 at 2022-06-08 01:06:43 +0000
 Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
@@ -87,7 +82,6 @@ puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
 Started GET "/" for 118.83.57.99 at 2022-06-08 01:18:17 +0000
 Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
->>>>>>> ffc9af619978649d990915f3caf3d6cb62f29da9
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   
@@ -1526,6 +1520,7 @@ Processing by User::RegistrationsController#new as HTML
   Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 5036)
 Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 5579)
 >>>>>>> 1dfff4dcb0c85d23bc040d11ea33f6816721d597
+<<<<<<< HEAD
 
 
 Started GET "/" for 118.83.57.99 at 2022-06-08 02:51:55 +0000
@@ -1690,5 +1685,7 @@ Processing by HomesController#top as HTML
 [Webpacker] Everything's up-to-date. Nothing to do
   Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4865)
 Completed 200 OK in 22ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 6128)
+=======
+>>>>>>> develop
 
 
