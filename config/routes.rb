@@ -12,6 +12,13 @@ Rails.application.routes.draw do
     sessions: "admin/sessions"
   }
   
+  namespace :admin do
+    resources :items, only: [:new, :create, :index, :show]
+    resources :genres,only: [:index,:create,:update,:destroy,:edit]
+    resources :arcs,only: [:index,:create,:update,:destroy,:edit]
+    resources :makers,only: [:index,:create,:update,:destroy,:edit]
+  end
+  
   root to:'homes#top'
   
   get 'homes/top'

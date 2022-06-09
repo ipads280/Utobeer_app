@@ -1,21 +1,22 @@
-<div class="container">
-  
-  <h1><i class="fa-solid fa-right-to-bracket"></i>ログイン</h1>
-  <p>ログインはこちらのページから行ってください。新規登録がまだの方はこちら</p>
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <h1><i class="fa-solid fa-right-to-bracket"></i>ログイン</h1>
+    <p>ログインはこちらのページから行ってください。新規登録がまだの方はこちら</p>
+  </div>
 </div>
 
-<div class="py-3">
+<div class="row py-3">
   <%= form_with model: @user, url: user_session_path do |f| %>
-  <div class="container">
+  <div class="col-md-8 offset-md-2">
     <h3 class="mb-3">ログインフォーム</h3>
       <!--フォーム-->
       <form>
       <!--メールアドレス-->
       <div class="row py-3">
-        <label class="col-md-3 col-form-label">
+        <label class="col-md-4 col-form-label">
           <h4>メールアドレス</h4>
         </label>
-        <div class="col-md-9">
+        <div class="col-md-8">
           <div class="form-floating">
             <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
           </div>
@@ -23,10 +24,10 @@
       </div>
       
       <div class="row py-3">
-        <label class="col-md-3 col-form-label">
+        <label class="col-md-4 col-form-label">
           <h4>パスワード</h4>
         </label>
-        <div class="col-md-9">
+        <div class="col-md-8">
           <div class="form-floating">
             <%= f.password_field :password, autocomplete: "current-password" %>
             <% if devise_mapping.rememberable? %>
@@ -40,10 +41,10 @@
       </div>
       
       <div class="row py-3">
-        <label class="col-md-3 col-form-label">
+        <label class="col-md-4 col-form-label">
           <h4></h4>
         </label>
-        <div class="col-md-9">
+        <div class="col-md-8">
           <div class="form-floating">
             <div class="actions">
               <%= f.submit "Log in" %>
@@ -54,10 +55,10 @@
       </div>
       
       <div class="row py-3">
-        <label class="col-md-3 col-form-label">
+        <label class="col-md-4 col-form-label">
           <h4></h4>
         </label>
-        <div class="col-md-9">
+        <div class="col-md-8">
           <div class="form-floating">
             <div class="actions">
               <%= render "user/shared/links" %>
