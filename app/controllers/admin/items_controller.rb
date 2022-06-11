@@ -17,18 +17,26 @@ class Admin::ItemsController < ApplicationController
   end
 
   def show
+    @item=Item.find(params[:id])
   end
 
   def edit
+    @item=Item.find(params[:id])
+    @makers=Maker.all
+    @arcs=Arc.all
+    @genres=Genre.all
   end
 
   def update
+    item=Item.find(params[:id])
+    item.update(item_params)
+    redirect_to admin_item_path(item.id)
   end
   
   private
 
     #itemから欲しいデータのみ抽出
     def item_params
-        params.require(:item).permit(:user_id,:item_name,:item_image,:item_text)
+        params.require(:item).permit(:user_id,:item_name,:item_image,:item_text,:genre_id,:maker_id,:item_price,:arc_id,:created_at,:updated_at,:image)
     end
 end

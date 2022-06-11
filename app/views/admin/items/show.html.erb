@@ -1,2 +1,32 @@
-<h1>Admin::Items#show</h1>
-<p>Find me in app/views/admin/items/show.html.erb</p>
+<div class="card" style="width: 25rem;background-color:#D6CFA9;">
+  <%= image_tag @item.image,class: "card-img-top card-img-show" %>
+  <div class="card-body">
+    <h5 class="card-title"><%= @item.item_name %></h5>
+    <p class="card-text"><%=@item.item_text %></p>
+  </div>
+   <ul class="list-group list-group-flush">
+    <table class="table">
+      <tr>
+        <th><h6>メーカー</h6></th>
+　      <td><%=@item.maker.makers_name%></td>
+　    </tr>
+　    
+　    <tr>
+　      <th><h6>アルコール度数</h6></th>
+　      <td><%=@item.arc.arcs_name%>%</td>
+      </tr>
+      
+      <tr>
+　      <th><h6>ジャンル</h6></th>
+　      <td><%=@item.genre.genres_name%></td>
+      </tr>
+    </table>
+     <div class="card-body">
+        <%= link_to "編集", edit_admin_item_path(@item.id), class: 'btn btn-outline-secondary' %>
+     </div>
+  </ul>
+    
+  
+</div>
+
+

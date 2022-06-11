@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   }
   
   namespace :admin do
-    resources :items, only: [:new, :create, :index, :show]
+    resources :items, only: [:new, :create, :index, :show,:edit,:update]
     resources :genres,only: [:index,:create,:update,:destroy,:edit]
     resources :arcs,only: [:index,:create,:update,:destroy,:edit]
     resources :makers,only: [:index,:create,:update,:destroy,:edit]
