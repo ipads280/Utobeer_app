@@ -26,10 +26,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
+            <!--ユーザーログイン時-->
             <% if user_signed_in? %>
               <%= link_to destroy_user_session_path, method: :delete,class: "nav-link" do %>
                 <h5><i class="fa-solid fa-arrow-right-from-bracket"></i> ログアウト</h5>
               <%end%>
+              
+          　　<%= link_to items_path,class: "nav-link" do %>
+                <h5><i class="fa-solid fa-list"></i></i> 商品一覧</h5>
+              <%end%>
+              
+              
+            <!--管理人ログイン時-->
             <% elsif admin_signed_in? %>
               <%= link_to destroy_admin_session_path, method: :delete,class: "nav-link" do %>
                 <h5><i class="fa-solid fa-arrow-right-from-bracket"></i> ログアウト</h5>
@@ -72,7 +80,7 @@
     </nav>
 
     <main style="background-color:#E3E3DE; ">
-      <div class="container mt-4" style="padding-bottom:50px;">
+      <div class="container my-4" style="padding-bottom:50px;">
         <%= yield %>
       </div>
     </main>

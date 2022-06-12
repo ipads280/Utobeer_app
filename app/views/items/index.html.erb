@@ -24,7 +24,7 @@
       </tr>
     </table>
   </ul>
-    <%= link_to "詳細", admin_item_path(item.id), class: 'btn btn-outline-secondary' %>
+    <%= link_to "詳細",item_path(item.id), class: 'btn btn-outline-secondary' %>
   </div>
 </div>
 </div>
@@ -33,6 +33,3 @@
 
 
 <%= paginate @items %>
-
-
-

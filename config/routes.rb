@@ -23,4 +23,6 @@ Rails.application.routes.draw do
   
   get 'homes/top'
   get 'homes/about',as: 'about'
+  
+  resources :items, only: [:index, :show]
 end
