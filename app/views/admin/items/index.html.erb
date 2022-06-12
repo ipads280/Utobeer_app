@@ -1,0 +1,38 @@
+<div class= "row text-center">
+  <div class = "col-md-12 mt-5">
+    <h2>商品一覧</h2>
+  </div>
+</div>
+
+
+<div class="row row-cols-1 row-cols-md-3">
+  <% @items.each do |item| %>
+ <div class="col p-3">
+ <div class="card mx-auto" style="width: 15rem; height:rem; background-color:#E9E9E9;">
+  <%= image_tag item.image,class: "card-img-top card-img-index" %>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+    <table class="table">
+      <tr>
+        <th><h6>メーカー</h6></th>
+　      <td><%=item.maker.makers_name%></td>
+　    </tr>
+
+　    <tr>
+　      <th><h6>アルコール度数</h6></th>
+　      <td><%=item.arc.arcs_name%>%</td>
+      </tr>
+    </table>
+  </ul>
+    <%= link_to "詳細", admin_item_path(item.id), class: 'btn btn-outline-secondary' %>
+  </div>
+</div>
+</div>
+<%end%>
+</div>
+
+
+<%= paginate @items %>
+
+
+
