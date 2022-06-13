@@ -32,6 +32,10 @@
                 <h5><i class="fa-solid fa-arrow-right-from-bracket"></i> ログアウト</h5>
               <%end%>
               
+              <%= link_to user_path(current_user),class: "nav-link" do %>
+                <h5><i class="fa-solid fa-user"></i> マイページ</h5>
+              <%end%>
+              
           　　<%= link_to items_path,class: "nav-link" do %>
                 <h5><i class="fa-solid fa-list"></i></i> 商品一覧</h5>
               <%end%>
@@ -49,6 +53,10 @@
               
               <%= link_to admin_items_path,class: "nav-link" do %>
                 <h5><i class="fa-solid fa-list"></i></i> 商品一覧</h5>
+              <%end%>
+              
+              <%= link_to admin_users_path,class: "nav-link" do %>
+                <h5><i class="fa-solid fa-users"></i> 会員一覧</h5>
               <%end%>
               
               <%= link_to admin_genres_path,class: "nav-link" do %>

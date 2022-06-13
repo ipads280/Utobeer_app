@@ -1,0 +1,65 @@
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <h1><i class="fa-solid fa-pen-to-square"></i></i>マイページ</h1>
+    <p></p>
+ </div>
+</div>
+
+<div class="row py-2">
+  <div class="col-md-8 offset-md-2">
+    <h3 class="mb-3">マイページ</h3>
+      <!--フォーム-->
+      <form>
+        
+      <!--自己画像-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>プロフィール画像</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <p class="h4"><%= image_tag current_user.get_profile_image(100,100),class: 'profile_image' %></p>
+          </div>
+        </div>
+      </div>
+
+      <!--ニックネーム名-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>ニックネーム</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <p class="h4"><%=@user.name%></p>
+          </div>
+        </div>
+      </div>
+
+      <!--自己紹介-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>自己紹介文</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <p class="h4"><%=@user.introduction%></p>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      <!--編集ボタン-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <%= link_to "詳細",edit_user_path(current_user), class: 'btn btn-outline-secondary' %>
+          </div>
+        </div>
+      </div>
+
+      </form>
+  </div>
+</div>

@@ -28,3 +28,12 @@
 
 
 </div>
+
+<%= form_with model: [@item, @review] do |f| %>
+  <%= f.text_area :text, rows: '5', placeholder: "コメントをここに" %>
+  <%= f.submit "送信する" %>
+<% end%>
+
+<% @item.reviews.each do |review| %>
+  <%=review.text%>
+<%end%>
