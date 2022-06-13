@@ -5,12 +5,13 @@ Rails.application.routes.draw do
     registrations: "user/registrations",
     sessions: 'user/sessions'
   }
-
+ 
   # 管理者用
   # URL /admin/sign_in ...
   devise_for :admin, controllers: {
     sessions: "admin/sessions"
   }
+  
 
   namespace :admin do
     resources :items, only: [:new, :create, :index, :show,:edit,:update]
