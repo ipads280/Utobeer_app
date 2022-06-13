@@ -39418,3 +39418,483 @@ Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255
   
 ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
   
+Started GET "/" for 118.83.57.99 at 2022-06-13 15:45:44 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 1.1ms | Allocations: 243)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:48
+  Rendered layout layouts/application.html.erb (Duration: 70.9ms | Allocations: 26891)
+Completed 200 OK in 94ms (Views: 75.2ms | ActiveRecord: 0.7ms | Allocations: 30796)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 15:46:01 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 15:47:13 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.4ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:48
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 7148)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.1ms | Allocations: 8566)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 15:47:14 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 15:49:07 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:48
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 5817)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.1ms | Allocations: 6216)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 15:49:09 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 15:55:34 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 114)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/layouts/application.html.erb:46
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:46
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 9176)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.5ms | Allocations: 10506)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 15:55:35 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 15:57:41 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.3ms | Allocations: 119)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 8401)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.1ms | Allocations: 9733)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 15:57:42 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 15:58:00 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 7349)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.1ms | Allocations: 7745)
+
+
+Started GET "/admin/genres" for 118.83.57.99 at 2022-06-13 15:58:02 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/index.html.erb within layouts/application
+  [1m[36mGenre Load (0.1ms)[0m  [1m[34mSELECT "genres".* FROM "genres"[0m
+  ↳ app/views/admin/genres/index.html.erb:33
+  Rendered admin/genres/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1725)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8987)
+Completed 200 OK in 23ms (Views: 16.8ms | ActiveRecord: 0.8ms | Allocations: 13385)
+
+
+Started GET "/admin/genres/1/edit" for 118.83.57.99 at 2022-06-13 15:58:07 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by Admin::GenresController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGenre Load (0.2ms)[0m  [1m[34mSELECT "genres".* FROM "genres" WHERE "genres"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/admin/genres_controller.rb:14:in `edit'
+  Rendering layout layouts/application.html.erb
+  Rendering admin/genres/edit.html.erb within layouts/application
+  Rendered admin/genres/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 638)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 7937)
+Completed 200 OK in 17ms (Views: 13.5ms | ActiveRecord: 0.3ms | Allocations: 9125)
+
+
+Started PATCH "/admin/genres" for 118.83.57.99 at 2022-06-13 15:58:11 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [PATCH] "/admin/genres"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 15:59:01 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 7351)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms | Allocations: 7747)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 15:59:03 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 15:59:04 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 7334)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.1ms | Allocations: 7729)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-13 16:01:05 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.6ms | Allocations: 243)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ebe29d12fc4ec7e83444
+Version: webpack 4.46.0
+Time: 7018ms
+Built at: 06/13/2022 4:01:13 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-6e2cb15d3110ffe2706e.js   2.57 MiB  application  [emitted] [immutable]  application
+js/application-6e2cb15d3110ffe2706e.js.map   2.71 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-6e2cb15d3110ffe2706e.js js/application-6e2cb15d3110ffe2706e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 581 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 720 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 7 hidden modules
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 9:36-105
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 8:36-107
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 7:36-106
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 6:36-108
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 5:36-104
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 4:36-106
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+
+warning ../../package.json: No license field
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 8698.9ms | Allocations: 19351)
+Completed 200 OK in 8714ms (Views: 8701.1ms | ActiveRecord: 0.7ms | Allocations: 23257)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 16:01:28 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 16:01:36 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 18.5ms | Allocations: 7691)
+Completed 200 OK in 20ms (Views: 19.5ms | ActiveRecord: 0.1ms | Allocations: 8172)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 16:01:37 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 16:01:38 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 7334)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.1ms | Allocations: 7728)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-13 16:02:11 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 791d17a685455e490623
+Version: webpack 4.46.0
+Time: 7145ms
+Built at: 06/13/2022 4:02:20 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4591b2d7d6a330dee32c.js   2.57 MiB  application  [emitted] [immutable]  application
+js/application-4591b2d7d6a330dee32c.js.map   2.71 MiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4591b2d7d6a330dee32c.js js/application-4591b2d7d6a330dee32c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 603 bytes {application} [built]
+[./app/javascript/stylesheets/application.scss] 664 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss 720 KiB {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 7 hidden modules
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-brands-400.ttf' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 9:36-105
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 8:36-107
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 7:36-106
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 6:36-108
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 5:36-104
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+ERROR in ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss)
+Module not found: Error: Can't resolve './@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2' in '/home/ec2-user/environment/Utobeer/app/javascript/stylesheets'
+ @ ./app/javascript/stylesheets/application.scss (./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/dist/cjs.js??ref--6-3!./app/javascript/stylesheets/application.scss) 4:36-106
+ @ ./app/javascript/stylesheets/application.scss
+ @ ./app/javascript/packs/application.js
+
+
+warning ../../package.json: No license field
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 8950.9ms | Allocations: 8489)
+Completed 200 OK in 8953ms (Views: 8952.1ms | ActiveRecord: 0.1ms | Allocations: 8883)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 16:02:31 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 16:02:33 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.1ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 7353)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 7751)
+
+
+Started GET "/" for 118.83.57.99 at 2022-06-13 16:06:18 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: ad2011fe2f8dab894531
+Version: webpack 4.46.0
+Time: 1090ms
+Built at: 06/13/2022 4:06:22 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-ee7e886feb78fabb5f45.js   7.09 KiB  application  [emitted] [immutable]  application
+js/application-ee7e886feb78fabb5f45.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-ee7e886feb78fabb5f45.js js/application-ee7e886feb78fabb5f45.js.map
+[./app/javascript/packs/application.js] 3.19 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/ec2-user/environment/Utobeer/app/javascript/packs/application.js: Missing semicolon. (13:6)
+
+  11 | require("channels").
+  12 |
+> 13 | import "../stylesheets/application.scss";
+     |       ^
+  14 | import '@fortawesome/fontawesome-free/js/all';
+  15 |
+  16 | Rails.start()
+    at instantiate (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:72:32)
+    at constructor (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:358:12)
+    at Parser.raise (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:3341:19)
+    at Parser.semicolon (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:4002:10)
+    at Parser.parseExpressionStatement (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:15246:10)
+    at Parser.parseStatementContent (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:14793:19)
+    at Parser.parseStatement (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:14645:17)
+    at Parser.parseBlockOrModuleBlockBody (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:15288:25)
+    at Parser.parseBlockBody (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:15279:10)
+    at Parser.parseProgram (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:14563:10)
+    at Parser.parseTopLevel (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:14550:25)
+    at Parser.parse (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:16513:10)
+    at parse (/home/ec2-user/environment/Utobeer/node_modules/@babel/parser/lib/index.js:16565:38)
+    at parser (/home/ec2-user/environment/Utobeer/node_modules/@babel/core/lib/parser/index.js:52:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/ec2-user/environment/Utobeer/node_modules/@babel/core/lib/transformation/normalize-file.js:87:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/ec2-user/environment/Utobeer/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/home/ec2-user/environment/Utobeer/node_modules/@babel/core/lib/transform.js:25:41)
+    at transform.next (<anonymous>)
+    at step (/home/ec2-user/environment/Utobeer/node_modules/gensync/index.js:261:32)
+    at /home/ec2-user/environment/Utobeer/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/ec2-user/environment/Utobeer/node_modules/gensync/index.js:223:11)
+    at /home/ec2-user/environment/Utobeer/node_modules/gensync/index.js:189:28
+    at /home/ec2-user/environment/Utobeer/node_modules/@babel/core/lib/gensync-utils/async.js:74:7
+    at /home/ec2-user/environment/Utobeer/node_modules/gensync/index.js:113:33
+    at step (/home/ec2-user/environment/Utobeer/node_modules/gensync/index.js:287:14)
+    at /home/ec2-user/environment/Utobeer/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/ec2-user/environment/Utobeer/node_modules/gensync/index.js:223:11)
+
+
+warning ../../package.json: No license field
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mAdmin Load (0.7ms)[0m  [1m[34mSELECT "admins".* FROM "admins" WHERE "admins"."id" = ? ORDER BY "admins"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:47
+  Rendered layout layouts/application.html.erb (Duration: 4315.3ms | Allocations: 8476)
+Completed 200 OK in 4321ms (Views: 4318.3ms | ActiveRecord: 0.7ms | Allocations: 8870)
+
+
+Started GET "/admin/sign_out" for 118.83.57.99 at 2022-06-13 16:06:24 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/admin/sign_out"):
+  
+Started GET "/" for 118.83.57.99 at 2022-06-13 16:08:00 +0000
+Cannot render console from 118.83.57.99! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomesController#top as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering homes/top.html.erb within layouts/application
+  Rendered homes/top.html.erb within layouts/application (Duration: 0.7ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 7253)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 8579)
+
+
+  
+ActionView::Template::Error (The asset "application.js" is not present in the asset pipeline.
+):
+     6:     <%= csrf_meta_tags %>
+     7:     <%= csp_meta_tag %>
+     8:     
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    10:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    11:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    12:     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  
+app/views/layouts/application.html.erb:9

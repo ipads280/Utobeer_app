@@ -3,14 +3,11 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .card-img-index  {
-  width: 150px;
-  height: 200px;
   object-fit: cover;
 }
 
 .card-img-show  {
-  width: 200px;
-  height: 300px;
+
   object-fit: cover;
 }
 
