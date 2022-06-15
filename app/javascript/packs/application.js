@@ -4,15 +4,19 @@
 // that code so it'll be compiled.
 
 
-
 import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
+import 'jquery'
+import 'raty'
 
-import "../stylesheets/application.scss";
+import "../stylesheets/application.scss"
 import '@fortawesome/fontawesome-free/js/all';
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+window.$ = window.jQuery = require('jquery');
+import 'packs/raty'

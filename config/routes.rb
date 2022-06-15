@@ -33,6 +33,7 @@ Rails.application.routes.draw do
   patch '/users/:id/withdrawal' => 'users#withdrawal', as: 'withdrawal'
   
   resources :items, only: [:index, :show] do
-    resources :reviews, only: [:create]
+    resources :reviews, only: [:create,:new]
   end
+  
 end

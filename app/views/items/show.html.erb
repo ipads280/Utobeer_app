@@ -1,39 +1,65 @@
-<div class="card" style="width: 25rem;background-color:#D6CFA9;">
-  <%= image_tag @item.image,class: "card-img-top card-img-show" %>
-  <div class="card-body">
-    <h5 class="card-title"><%= @item.item_name %></h5>
-    <p class="card-text"><%=@item.item_text %></p>
+<div class='container px-5 px-sm-0'>
+ 
+  <div class='row'>
+    <div class='col-md-3'>
+      <div class="card" style="width: 18rem;background-color:#D6CFA9;">
+      <%= image_tag @item.image,class: "card-img-top card-img-show" %>
+      <div class="card-body">
+        <h5 class="card-title"><%= @item.item_name %></h5>
+        <p class="card-text"><%=@item.item_text %></p>
+      </div>
+     
+      <ul class="list-group list-group-flush">
+        <table class="table">
+          <tr>
+            <th><h6>メーカー</h6></th>
+　          <td><%=@item.maker.makers_name%></td>
+　        </tr>
+
+　        <tr>
+　          <th><h6>アルコール度数</h6></th>
+　          <td><%=@item.arc.arcs_name%>%</td>
+          </tr>
+
+          <tr>
+　          <th><h6>ジャンル</h6></th>
+　          <td><%=@item.genre.genres_name%></td>
+          </tr>
+      
+          <tr>
+　          <th><h6>レビュー件数</h6></th>
+　          <td><%=@item.reviews.count%></td>
+          </tr>
+        </table>
+        
+        <div class="card-body">
+          <%= link_to "一覧に戻る",items_path, class: 'btn btn-outline-secondary' %>
+          <%= link_to "レビューする",new_item_review_path(@item), class: 'btn btn-outline-secondary' %>
+        </div>
+      </ul>
+      </div>
+    </div>
+    
+    <div class="col-md-9">
+      <div class="text-center">
+        <h4>レビュー全<%=@item.reviews.count%>件</h4>
+      </div>
+    </div>
+    
+    <div class="col-md-9">
+      
+    </div>
+    
+    
+      <%@item.reviews.each do |review|%>
+        <%=review.title%>
+      <%end%>
+    </div>
+    
   </div>
-   <ul class="list-group list-group-flush">
-    <table class="table">
-      <tr>
-        <th><h6>メーカー</h6></th>
-　      <td><%=@item.maker.makers_name%></td>
-　    </tr>
-
-　    <tr>
-　      <th><h6>アルコール度数</h6></th>
-　      <td><%=@item.arc.arcs_name%>%</td>
-      </tr>
-
-      <tr>
-　      <th><h6>ジャンル</h6></th>
-　      <td><%=@item.genre.genres_name%></td>
-      </tr>
-    </table>
-     <div class="card-body">
-       <%= link_to "一覧に戻る",items_path, class: 'btn btn-outline-secondary' %>
-     </div>
-  </ul>
-
-
 </div>
 
-<%= form_with model: [@item, @review] do |f| %>
-  <%= f.text_area :text, rows: '5', placeholder: "コメントをここに" %>
-  <%= f.submit "送信する" %>
-<% end%>
 
-<% @item.reviews.each do |review| %>
-  <%=review.text%>
-<%end%>
+
+
+
