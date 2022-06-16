@@ -4,7 +4,7 @@ class ReviewsController < ApplicationController
   end
 
   def edit
-    @review=Review.find_by(item_id: params[:id],id: params[:item_id])
+    @review=Review.find_by(id: params[:id])
   end
 
   def create
@@ -17,8 +17,7 @@ class ReviewsController < ApplicationController
   
   def update
     item=Item.find(params[:item_id])
-    review=Review.find_by(item_id: params[:id],id: params[:item_id])
-    review.item_id=item.id
+    review=Review.find_by(id: params[:id])
     review.update(review_params)
     redirect_to item_path(item)
   end
