@@ -14,7 +14,9 @@ Rails.application.routes.draw do
   
 
   namespace :admin do
-    resources :items, only: [:new, :create, :index, :show,:edit,:update]
+    resources :items, only: [:new, :create, :index, :show,:edit,:update] do
+      resources :reviews, only: [:update,:destroy,:edit]
+    end
     resources :genres,only: [:index,:create,:update,:destroy,:edit]
     resources :arcs,only: [:index,:create,:update,:destroy,:edit]
     resources :makers,only: [:index,:create,:update,:destroy,:edit]
@@ -33,7 +35,7 @@ Rails.application.routes.draw do
   patch '/users/:id/withdrawal' => 'users#withdrawal', as: 'withdrawal'
   
   resources :items, only: [:index, :show] do
-    resources :reviews, only: [:create,:new]
+    resources :reviews, only: [:create,:new,:update,:destroy,:edit]
   end
   
 end
