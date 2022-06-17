@@ -21,4 +21,8 @@ class Item < ApplicationRecord
     end
   end
   
+  def star
+    self.star.to_f*20
+  end
+  
 end

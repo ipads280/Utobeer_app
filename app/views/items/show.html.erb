@@ -68,17 +68,18 @@
         <h4 class="my-3">レビュー全<%=@item.reviews.count%>件</h4>
       </div>
 
-        <%@item.reviews.each do |review|%>
+        <%@reviews.each do |review|%>
         <div class="card">
           <div class="card-body">
             <h5 class="card-title"><%=review.title%></h5>
             <h6><%= image_tag review.user.get_profile_image(100,100),class: 'profile_image' %>　　<%=review.user.name%></h6>
             <div class="card-content">
               
+              
               <div class="card-text">
                 <div class="content average-score">
                   <div class="star-rating mb-2">
-                    <div class="star-rating-front" style="width: <%= review.star*20 %>%"><nobr>★★★★★</nobr></div>
+                    <div class="star-rating-front" style="width: <%=(review.star).to_f*20%>%"><nobr>★★★★★</nobr></div>
                     <div class="star-rating-back"><nobr>★★★★★</nobr></div>
                   </div>
                 </div>
@@ -100,8 +101,9 @@
           </div>
           <%end%>
         </div>
-     </div>
-     
+         
+    </div>
+
 </div>
 
 </div>
