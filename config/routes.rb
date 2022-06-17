@@ -36,6 +36,7 @@ Rails.application.routes.draw do
   
   resources :items, only: [:index, :show] do
     resources :reviews, only: [:create,:new,:update,:destroy,:edit]
+    resource :favorites, only: [:create, :destroy]
   end
   
 end
