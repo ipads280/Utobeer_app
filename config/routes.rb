@@ -28,14 +28,18 @@ Rails.application.routes.draw do
   get 'homes/top'
   get 'homes/about',as: 'about'
 
-  resources :users, only: [:edit,:show,:quit,:update] 
+  resources :users, only: [:edit,:show,:quit,:update] do
+    member do
+      get :favorites
+    end
+  end
   # 退会確認画面
   get '/users/:id/unsubscribe' => 'users#unsubscribe', as: 'unsubscribe'
   # 論理削除用のルーティング
   patch '/users/:id/withdrawal' => 'users#withdrawal', as: 'withdrawal'
   
   resources :items, only: [:index, :show] do
-    resources :reviews, only: [:create,:new,:update,:destroy,:edit]
+    resources :reviews, only: [:create,:new,:update,:destroy,:edit] 
     resource :favorites, only: [:create, :destroy]
   end
   

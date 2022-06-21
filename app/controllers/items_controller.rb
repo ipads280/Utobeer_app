@@ -7,6 +7,11 @@ class ItemsController < ApplicationController
   def show
     @item=Item.find(params[:id])
     @reviews=@item.reviews
-    @review=@reviews.all.page(params[:page]).per(3)
+    @reviews = @item.reviews.page(params[:page]).per(3)
+
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 end

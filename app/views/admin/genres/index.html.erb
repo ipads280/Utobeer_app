@@ -39,7 +39,7 @@
               <%end%>
             </td>
             <td>
-              <%= button_to admin_genre_path(genre.id),class:"btn btn-secondary" do %>
+              <%= button_to admin_genre_path(genre.id),method: :delete,class:"btn btn-secondary" do %>
                 <h6 class="my-auto">削除</h6>
               <%end%>
             </td>

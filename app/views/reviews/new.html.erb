@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-md-8 offset-md-2">
-    <%= form_with model: @review, url: item_reviews_path do |f| %>
     <h1><i class="fa-solid fa-right-to-bracket"></i>この商品をレビュー</h1>
     <p>レビューをしてください！”</p>
  </div>
 </div>
 
+<%= form_with model: [@item, @review], url: item_reviews_path do |f| %>
 <div class="row py-3">
   <div class="col-md-8 offset-md-2">
     <h3 class="mb-3"></h3>
@@ -35,11 +35,11 @@
           </div>
         </div>
       </div>
-      
+
       <div>
         <%= f.hidden_field :star, id:"rating_value" %>
       </div>
-      
+
       <div class="row py-3">
         <label class="col-md-4 col-form-label">
           <h4>レビュータイトル</h4>
@@ -50,7 +50,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row py-3">
         <label class="col-md-4 col-form-label">
           <h4>レビューを追加</h4>
@@ -61,7 +61,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row py-3">
         <label class="col-md-4 col-form-label">
           <h4></h4>
@@ -74,11 +74,11 @@
           </div>
         </div>
       </div>
-      
+
       </form>
   </div>
-  <% end %>
 </div>
+<% end %>
 
 
 <%= javascript_pack_tag 'review_stars' %>

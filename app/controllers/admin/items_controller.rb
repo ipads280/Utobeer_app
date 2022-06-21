@@ -19,8 +19,13 @@ class Admin::ItemsController < ApplicationController
 
   def show
     @item=Item.find(params[:id])
-    @review=@item.reviews.all.count
-    @items=@item.reviews.page(params[:page]).per(3)
+    @reviews=@item.reviews
+    @reviews = @item.reviews.page(params[:page]).per(3)
+    
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
 
   def edit

@@ -30,7 +30,7 @@
           <ul class="navbar-nav ml-auto">
             <!--ユーザーログイン時-->
             <% if user_signed_in? %>
-              <%= link_to destroy_user_session_path,class: "nav-link" do %>
+              <%= link_to destroy_user_session_path,class: "nav-link",method: :delete do %>
                 <h5><i class="fa-solid fa-arrow-right-from-bracket"></i> ログアウト</h5>
               <%end%>
 
@@ -45,7 +45,7 @@
 
             <!--管理人ログイン時-->
             <% elsif admin_signed_in? %>
-              <%= link_to destroy_admin_session_path,class: "nav-link" do %>
+              <%= link_to destroy_admin_session_path,class: "nav-link",method: :delete do %>
                 <h5><i class="fa-solid fa-arrow-right-from-bracket"></i> ログアウト</h5>
               <%end%>
 
