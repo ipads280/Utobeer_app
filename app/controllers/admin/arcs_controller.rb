@@ -5,9 +5,14 @@ class Admin::ArcsController < ApplicationController
   end
 
   def create
-    arc=Arc.new(arc_params)
-    arc.save
-    redirect_to admin_arcs_path
+    @arc=Arc.new(arc_params)
+    if @arc.valid?
+      @arc.save
+      redirect_to admin_arcs_path
+    else
+      @arcs=Arc.all
+      render :index
+    end
   end
   
   def edit

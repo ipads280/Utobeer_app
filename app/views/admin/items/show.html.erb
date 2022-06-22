@@ -1,33 +1,113 @@
-<div class="card" style="width: 25rem;background-color:#D6CFA9;">
-  <%= image_tag @item.image,class: "card-img-top card-img-show" %>
-  <div class="card-body">
-    <h5 class="card-title"><%= @item.item_name %></h5>
-    <p class="card-text"><%=@item.item_text %></p>
-  </div>
-   <ul class="list-group list-group-flush">
-    <table class="table">
-      <tr>
-        <th><h6>メーカー</h6></th>
-　      <td><%=@item.maker.makers_name%></td>
-　    </tr>
-　    
-　    <tr>
-　      <th><h6>アルコール度数</h6></th>
-　      <td><%=@item.arc.arcs_name%>%</td>
-      </tr>
-      
-      <tr>
-　      <th><h6>ジャンル</h6></th>
-　      <td><%=@item.genre.genres_name%></td>
-      </tr>
-    </table>
-     <div class="card-body">
-        <%= link_to "編集", edit_admin_item_path(@item.id), class: 'btn btn-outline-secondary' %>
-        <%= link_to "一覧に戻る",items_path, class: 'btn btn-outline-secondary' %>
-     </div>
-  </ul>
-    
+<div class='container px-1 px-sm-0'>
+
+  <div class='row'>
   
+    
+    <div class='col-md-6'>
+      
+      <div class="text-center">
+        <h4 class="m-3">商品詳細</h4>
+      </div>
+      
+      <div class="card mx-auto" style="width: 18rem; background-color:#E9E9E9;">
+      <%= image_tag @item.image,class: "card-img-top card-img-show" %>
+      <div class="card-body">
+        <h5 class="card-title"><%= @item.item_name %></h5>
+
+        <p class="card-text"><%=@item.item_text %></p>
+
+        <div class="card-content">
+        <div class="content average-score">
+          <div class="star-rating mb-2">
+            <div class="star-rating-front" style="width: <%= @item.review_score_percentage %>%"><nobr>★★★★★</nobr></div>
+            <div class="star-rating-back"><nobr>★★★★★</nobr></div>
+          </div>
+
+          <div class="average-score-display ml-3 pt-2">
+            <%= @item.avg_score %>点
+          </div>
+        </div>
+        </div>
+
+      </div>
+
+
+      <ul class="list-group list-group-flush">
+        <table class="table">
+          <tr>
+            <th><h6>メーカー</h6></th>
+　          <td><%=@item.maker.makers_name%></td>
+　        </tr>
+
+　        <tr>
+　          <th><h6>アルコール度数</h6></th>
+　          <td><%=@item.arc.arcs_name%>%</td>
+          </tr>
+
+          <tr>
+　          <th><h6>ジャンル</h6></th>
+　          <td><%=@item.genre.genres_name%></td>
+          </tr>
+
+
+        </table>
+
+
+
+        <div class="card-body">
+          <%= link_to "一覧に戻る",admin_items_path, class: 'btn btn-outline-secondary' %>
+          <%= link_to "編集する",edit_admin_item_path(@item), class: 'btn btn-outline-secondary' %>
+        </div>
+      </ul>
+      </div>
+      
+    </div>
+
+    <div class="col-md-6">
+      <div class="text-center">
+        <h4 class="my-3">レビュー全<%=@item.reviews.count%>件</h4>
+      </div>
+
+　　　<div id="pagenate">
+　　　  <%= paginate @reviews, remote: true %>
+        <%@reviews.each do |review|%>
+        <div class="card" style="background-color:#E9E9E9;">
+          <div class="card-body">
+            <h5 class="card-title"><%=review.title%></h5>
+            <h6><%= image_tag review.user.get_profile_image(100,100),class: 'profile_image' %>　　<%=review.user.name%></h6>
+            <div class="card-content">
+              
+              <div class="card-text">
+                <div class="content average-score">
+                  <div class="star-rating mb-2">
+                    <div class="star-rating-front" style="width: <%= review.star*20 %>%"><nobr>★★★★★</nobr></div>
+                    <div class="star-rating-back"><nobr>★★★★★</nobr></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-text my-2">
+                <%=review.text%>
+              </div>
+              
+       
+                <table>
+　　　　　　　　  <tr>
+                    <td><%= button_to "削除する",item_review_path(review.id),method: :delete, class: 'btn btn-outline-secondary' %></td>
+                    <td><%= button_to "編集する",edit_admin_item_review_path(@item.id,review.id),method: :get, class: 'btn btn-outline-secondary' %></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+        </div>
+        <%end%>
+      </div>
+    
+
+  </div>
+</div>
+
 </div>
 
 
+<%= javascript_pack_tag 'review_stars' %>

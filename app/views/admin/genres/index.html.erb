@@ -11,6 +11,7 @@
   <div class ="row  d-flex justify-content-center">
     <div class="col-lg-8 mt-3 d-flex justify-content-center">
       <%= form_with model: @genre,url: admin_genres_path do |f| %>
+        <%= render 'layouts/error', model: f.object %>
         <label> <h5>ジャンル名</h5></label>
         <%= f.text_field :genres_name %>
         <%= f.submit '新規登録',class:"btn btn-success" %>
@@ -39,7 +40,7 @@
               <%end%>
             </td>
             <td>
-              <%= link_to admin_genre_path(genre.id), method: :delete,class:"btn btn-secondary" do %>
+              <%= button_to admin_genre_path(genre.id),method: :delete,class:"btn btn-secondary" do %>
                 <h6 class="my-auto">削除</h6>
               <%end%>
             </td>

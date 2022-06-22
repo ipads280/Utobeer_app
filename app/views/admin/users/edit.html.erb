@@ -1,0 +1,90 @@
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <h1><i class="fa-solid fa-pen-to-square"></i><%=@user.name%>の編集ページ</h1>
+    <p></p>
+ </div>
+</div>
+
+<%= form_with model: @user, url: admin_user_path(@user),method: :patch do |f| %>
+<div class="row py-2">
+  <div class="col-md-8 offset-md-2">
+    <h3 class="mb-3">マイページ</h3>
+      <!--フォーム-->
+      <form>
+
+      <!--自己画像-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>プロフィール画像</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <%= f.file_field :profile_image, placeholder: "プロフィール画像", accept: "image/*"%>
+          </div>
+        </div>
+      </div>
+
+      <!--ニックネーム名-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>ニックネーム</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <%= f.text_field :name %>
+          </div>
+        </div>
+      </div>
+
+      <!--メールアドレス-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>メールアドレス</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <%= f.text_field :email %>
+          </div>
+        </div>
+      </div>
+
+      <!--自己紹介-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>自己紹介文</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <%= f.text_area :introduction,class: "text_area" %>
+          </div>
+        </div>
+      </div>
+
+      <!--自己紹介-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>ステータス確認</h4>
+        </label>
+        <div class="col-md-8">
+          <%= f.radio_button :is_deleted, true %>
+          <%= f.label :is_deleted, "退会済", {value: :true, style: "display: inline-block;"} %>
+          <%= f.radio_button :is_deleted, false %>
+          <%= f.label :is_deleted, "有効", {value: :false, style: "display: inline-block;"} %>
+        </div>
+      </div>
+
+      <!--編集ボタン-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <%= f.submit "変更を保存" %>
+          </div>
+        </div>
+      </div>
+
+      </form>
+  </div>
+</div>
+<%end%>

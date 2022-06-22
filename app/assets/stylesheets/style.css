@@ -3,17 +3,118 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .card-img-index  {
-  width: 150px;
-  height: 200px;
   object-fit: cover;
+  
+}
+
+.card-img-toppage{
+  object-fit: cover;
+  height: 200px
 }
 
 .card-img-show  {
-  width: 200px;
-  height: 300px;
+
   object-fit: cover;
 }
 
 .pagination {
   justify-content: center;
+}
+
+.profile_image {
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  width: 100px;  /* 縦横を同じ値にする */
+  height: 100px;  /* 縦横を同じ値にする */
+  object-fit: cover; /* 縦横比固定したまま上2つの縦横の範囲内に収まるように配置する */
+}
+
+.button {
+  border: none;
+  background: transparent;
+}
+
+.rating-box .ratings .fa{
+  font-size: 30px;
+  color:#ffcc00;
+  cursor: pointer;
+}
+
+.main-rating {
+  display: flex;
+}
+
+.rating-value-display {
+  font-size: 20px;
+}
+
+/*ここから　ボックスの大きさ設定 */
+
+input[type="text"] {
+        width: 100%;
+        height: 30px;
+    }
+
+input[type="password"] {
+        width: 100%;
+        height: 30px;
+    }
+
+input[type="email"] {
+        width: 100%;
+        height: 30px;
+    }
+
+.text_area{
+  width: 100%;
+  height: 100px;
+}
+
+/*ここまで　ボックスの大きさ設定 */
+
+.star-rating {
+  position: relative;
+  width: 5em;
+  height: 1em;
+  font-size: 25px;
+}
+.star-rating-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: #ffcc33;
+}
+.star-rating-back {
+  color: #ccc;
+}
+
+.average-score {
+  display: flex;
+}
+.average-score-display {
+  font-size: 16px;
+}
+
+/*ページネーション自体のデザイン*/
+.pagination>li>a {          
+  border: none;     /*枠線をなくす*/
+  color: #696969;   /*文字の色を変える*/
+}
+
+/* 表示しているページ番号のデザイン */
+.pagination>.active>a {     
+  background: #93c9ff;     /*背景の色を変える*/
+  border-radius: 15px;     /*角を丸くする*/
+}
+
+/*ホバー時のデザイン*/
+.pagination>li>a:hover {        
+  border-radius: 15px;    /*角を丸くする*/
+}
+
+/*レスポンシブ対応*/
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
 }

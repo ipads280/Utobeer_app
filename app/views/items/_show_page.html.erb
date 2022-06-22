@@ -1,0 +1,47 @@
+<div id="pagenate">
+        <%= paginate @reviews, remote: true %>
+        <%@reviews.each do |review|%>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title"><%=review.title%></h5>
+            
+            <%= link_to user_path(review.user) do%>
+              <h6><%= image_tag review.user.get_profile_image(100,100),class: 'profile_image' %> <%=review.user.name%></h6>
+            <%end%>
+            
+            <div class="card-content">
+              <div class="card-text">
+                <div class="content average-score">
+                  <div class="star-rating mb-2">
+                    <div class="star-rating-front" style="width: <%=(review.star).to_f*20%>%"><nobr>★★★★★</nobr></div>
+                    <div class="star-rating-back"><nobr>★★★★★</nobr></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-text my-2">
+                <%=review.text%>
+              </div>
+
+              <% if review.user == current_user %>
+                <table>
+　　　　　　　　  <tr>
+                    <td>
+                      <%= link_to item_review_path(review.id),method: :delete, class: "btn btn-danger" do %>
+                        <i class="fa-solid fa-trash-can"></i>
+                      <%end%>
+                    </td>
+                    <td>
+                      <%= link_to edit_item_review_path(@item.id,review.id),method: :get, class: 'btn btn-secondary' do %>
+                        <i class="fa-solid fa-pen-to-square"></i>
+                      <%end%>
+                    </td>
+              <%end%>      
+                  </tr>
+                </table>
+              
+            </div>
+          </div>
+          <%end%>
+        </div>
+      </div>

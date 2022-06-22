@@ -1,0 +1,34 @@
+    <div id="pagenate">
+　　　  <%= paginate @reviews, remote: true %>
+        <%@reviews.each do |review|%>
+        <div class="card" style="background-color:#E9E9E9;">
+          <div class="card-body">
+            <h5 class="card-title"><%=review.title%></h5>
+            <h6><%= image_tag review.user.get_profile_image(100,100),class: 'profile_image' %>　　<%=review.user.name%></h6>
+            <div class="card-content">
+              
+              <div class="card-text">
+                <div class="content average-score">
+                  <div class="star-rating mb-2">
+                    <div class="star-rating-front" style="width: <%= review.star*20 %>%"><nobr>★★★★★</nobr></div>
+                    <div class="star-rating-back"><nobr>★★★★★</nobr></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card-text my-2">
+                <%=review.text%>
+              </div>
+              
+       
+                <table>
+　　　　　　　　  <tr>
+                    <td><%= button_to "削除する",item_review_path(review.id),method: :delete, class: 'btn btn-outline-secondary' %></td>
+                    <td><%= button_to "編集する",edit_admin_item_review_path(@item.id,review.id),method: :get, class: 'btn btn-outline-secondary' %></td>
+                  </tr>
+                </table>
+            </div>
+          </div>
+        </div>
+        <%end%>
+      </div>
