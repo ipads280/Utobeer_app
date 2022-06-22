@@ -1,7 +1,8 @@
 class ItemsController < ApplicationController
-   def index
+  def index
     @items=Item.all
     @items = Item.page(params[:page]).per(6)
+    
   end
 
   def show
@@ -14,4 +15,10 @@ class ItemsController < ApplicationController
       format.js
     end
   end
+  
+　def search
+    method = params[:search_method]
+    word = params[:search_word]
+    @items = Item.search(method,word)
+　end
 end

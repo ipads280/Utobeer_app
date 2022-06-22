@@ -13,8 +13,15 @@ class Admin::ItemsController < ApplicationController
 
   def create
     @item=Item.new(item_params)
-    @item.save
-    redirect_to admin_items_path
+    if @item.valid?
+      @item.save
+      redirect_to admin_items_path
+    else
+      @makers=Maker.all
+      @genres=Genre.all
+      @arcs=Arc.all
+      render :new
+    end
   end
 
   def show

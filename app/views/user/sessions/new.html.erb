@@ -9,6 +9,7 @@
   <%= form_with model: @user, url: user_session_path do |f| %>
   <div class="col-md-8 offset-md-2">
     <h3 class="mb-3">ログインフォーム</h3>
+    <%= render 'layouts/error', model: f.object %>
       <!--フォーム-->
       <form>
       <!--メールアドレス-->
@@ -22,7 +23,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row py-3">
         <label class="col-md-4 col-form-label">
           <h4>パスワード</h4>
@@ -39,7 +40,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="row py-3">
         <label class="col-md-4 col-form-label">
           <h4></h4>
@@ -48,12 +49,12 @@
           <div class="form-floating">
             <div class="actions">
               <%= f.submit "Log in" %>
-              
+
             </div>
           </div>
         </div>
       </div>
-      
+
       <div class="row py-3">
         <label class="col-md-4 col-form-label">
           <h4></h4>

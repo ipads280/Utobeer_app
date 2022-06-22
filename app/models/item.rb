@@ -6,6 +6,25 @@ class Item < ApplicationRecord
   has_many :reviews, dependent: :destroy
   has_many :favorites, dependent: :destroy
   
+  validates :item_name, presence: true, uniqueness: true
+  validates :item_text, presence: true
+  validates :genre_id, presence: true
+  validates :maker_id, presence: true
+  validates :arc_id, presence: true
+  validates :item_price, presence: true
+  validates :image, presence: true
+  
+  def self.search_for(content, method)
+    if method == 'perfect'
+      Item.where(item_name: content)
+    elsif method == 'forward'
+      Item.where('item_name LIKE ?', content+'%')
+    elsif method == 'backward'
+      Item.where('item_name LIKE ?', '%'+content)
+    else
+      Item.where('item_name LIKE ?', '%'+content+'%')
+    end
+  end
   
   def favorited_by?(user)
     favorites.where(user_id: user.id).exists?

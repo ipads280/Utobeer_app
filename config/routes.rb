@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'searches/search'
   # 顧客用
   # URL /users/sign_in ...
   devise_for :users, controllers: {
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
     sessions: "admin/sessions"
   }
   
+  
 
   namespace :admin do
     resources :items, only: [:new, :create, :index, :show,:edit,:update] do
@@ -24,7 +26,7 @@ Rails.application.routes.draw do
   end
 
   root to:'homes#top'
-
+  get '/search', to: 'searches#search'
   get 'homes/top'
   get 'homes/about',as: 'about'
 

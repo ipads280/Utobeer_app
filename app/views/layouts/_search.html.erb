@@ -1,0 +1,10 @@
+<div class="serch_form">
+  <%= form_with url: search_path,method: :get, local: true do |f| %>
+    <nobr>
+      <%= f.text_field :content %>
+      <%= f.select :model,options_for_select({"ビール名"=>"item","ユーザー名"=>"user"})%>
+      <%= f.select :method,options_for_select({"完全一致"=>"perfect","部分一致"=>"partial"})%>
+      <%= f.submit'検索' %>
+    </nobr>
+  <% end %>
+</div>

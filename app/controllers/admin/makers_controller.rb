@@ -5,9 +5,14 @@ class Admin::MakersController < ApplicationController
   end
 
   def create
-    maker=Maker.new(maker_params)
-    maker.save
-    redirect_to admin_makers_path
+    @maker=Maker.new(maker_params)
+    if @maker.valid?
+      @maker.save
+      redirect_to admin_makers_path
+    else
+      @makers=Maker.all
+      render :index
+    end
   end
   
   def edit

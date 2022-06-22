@@ -28,8 +28,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ml-auto">
+            
+            
+            
             <!--ユーザーログイン時-->
             <% if user_signed_in? %>
+              
               <%= link_to destroy_user_session_path,class: "nav-link",method: :delete do %>
                 <h5><i class="fa-solid fa-arrow-right-from-bracket"></i> ログアウト</h5>
               <%end%>
@@ -41,7 +45,10 @@
           　　<%= link_to items_path,class: "nav-link" do %>
                 <h5><i class="fa-solid fa-list"></i></i> 商品一覧</h5>
               <%end%>
-
+              
+              <div class="nav-link">
+                <%= render 'layouts/search' %>
+              </div>
 
             <!--管理人ログイン時-->
             <% elsif admin_signed_in? %>
