@@ -1,25 +1,30 @@
 class UsersController < ApplicationController
-  
+
   def favorites
     @user=User.find(params[:id])
     favorites= Favorite.where(user_id: @user.id).pluck(:item_id)
     @favorite_items = Item.find(favorites)
   end
-  
+
   def show
     @user=User.find(params[:id])
   end
 
   def edit
    @user=User.find(params[:id])
+   if @user==current_user
+     render 'edit'
+   else
+     redirect_to items_path
+   end
   end
-   
-  def update 
+
+  def update
     user=current_user
     user.update(user_params)
     redirect_to user_path(user.id)
   end
-  
+
   def withdrawal
     @user = User.find(params[:id])
     # is_deletedカラムをtrueに変更することにより削除フラグを立てる
@@ -28,11 +33,11 @@ class UsersController < ApplicationController
     flash[:notice] = "退会処理を実行いたしました"
     redirect_to root_path
   end
-  
+
   private
-  
+
   def user_params
     params.require(:user).permit(:name,:profile_image,:introduction,:image,:is_deleted)
   end
-  
+
 end
