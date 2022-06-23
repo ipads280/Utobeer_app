@@ -15,10 +15,4 @@ class ItemsController < ApplicationController
       format.js
     end
   end
-  
-　def search
-    method = params[:search_method]
-    word = params[:search_word]
-    @items = Item.search(method,word)
-　end
 end
