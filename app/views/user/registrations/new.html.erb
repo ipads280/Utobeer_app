@@ -1,0 +1,81 @@
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <h1><i class="fa-solid fa-user-plus"></i>新規登録</h1>
+    <p>新規登録はこちらのページから行ってください。ログインはこちらから</p>
+  </div>
+</div>
+
+<div class="row py-3">
+  <%= form_with model: @user, url: user_registration_path do |f| %>
+  <div class="col-md-8 offset-md-2">
+    <h3 class="mb-3">新規登録フォーム</h3>
+    <%= render 'layouts/error', model: f.object %>
+      <!--フォーム-->
+      <form>
+      <!--ニックネームの入力-->
+      <div class="row py-3">
+        <label class="col-md-4 col-form-label">
+          <h4>ニックネーム</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <%= f.text_field :name %>
+          </div>
+        </div>
+      </div>
+
+      <!--メールアドレス-->
+      <div class="row py-3">
+        <label class="col-md-4 col-form-label">
+          <h4>メールアドレス</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-3">
+        <label class="col-md-4 col-form-label">
+          <h4>パスワード</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <% if @minimum_password_length %>
+              <em>(<%= @minimum_password_length %> characters minimum)</em>
+            <% end %><br />
+              <%= f.password_field :password, autocomplete: "new-password" %>
+          </div>
+        </div>
+      </div>
+
+       <!--パスワード再入力-->
+      <div class="row py-3">
+        <label class="col-md-4 col-form-label">
+          <h4>パスワードを再入力</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-3">
+        <label class="col-md-4 col-form-label">
+          <h4></h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <div class="actions">
+              <%= f.submit "Sign up" %>
+              <%= render "user/shared/links" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      </form>
+  </div>
+  <% end %>
+</div>

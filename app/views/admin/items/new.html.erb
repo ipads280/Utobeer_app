@@ -1,0 +1,116 @@
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <h1><i class="fa-solid fa-circle-plus"></i>ビール投稿</h1>
+    <p>こちらのページではビールの投稿をすることができます。</p>
+ </div>
+</div>
+<%= form_with model: @item, url: admin_items_path do |f| %>
+<div class="row py-2">
+  <div class="col-md-8 offset-md-2">
+    <h3 class="mb-3">新規投稿フォーム</h3>
+    <%= render 'layouts/error', model: f.object %>
+      <!--フォーム-->
+      <form>
+      <!--ビール名-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>ビール名</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating ">
+            <%= f.text_field :item_name %>
+          </div>
+        </div>
+      </div>
+      
+      <!--商品説明文-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>商品説明</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <%= f.text_area :item_text,class: "text_area" %>
+          </div>
+        </div>
+      </div>
+      
+       <!--画像-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>商品画像</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <%= f.file_field :image %>
+          </div>
+        </div>
+      </div>
+      
+      <!--価格-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>税抜き価格</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <%= f.text_field :item_price %>円
+          </div>
+        </div>
+      </div>
+      
+      <!--メーカー-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>メーカー名</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <%= f.collection_select(:maker_id, @makers, :id, :makers_name, prompt: "--選択してください--") %>
+          </div>
+        </div>
+      </div>
+      
+      <!--度数-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>度数</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <%= f.collection_select(:arc_id, @arcs, :id, :arcs_name, prompt: "--選択してください--") %>%
+          </div>
+        </div>
+      </div>
+      
+      <!--種類-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4>種類</h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <%= f.collection_select(:genre_id, @genres, :id, :genres_name, prompt: "--選択してください--") %>
+          </div>
+        </div>
+      </div>
+      
+      <!--送信ボタン-->
+      <div class="row py-2">
+        <label class="col-md-4 col-form-label">
+          <h4></h4>
+        </label>
+        <div class="col-md-8">
+          <div class="form-floating">
+            <div class="actions">
+              <%= f.submit "新規投稿" %>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </form>
+  </div>
+</div>
+<% end %>
