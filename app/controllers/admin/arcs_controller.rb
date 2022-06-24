@@ -1,4 +1,5 @@
 class Admin::ArcsController < ApplicationController
+  
   def index
     @arc=Arc.new
     @arcs=Arc.all

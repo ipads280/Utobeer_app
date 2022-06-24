@@ -93,7 +93,7 @@
        
                 <table>
 　　　　　　　　  <tr>
-                    <td><%= button_to "削除する",item_review_path(review.id),method: :delete, class: 'btn btn-outline-secondary' %></td>
+                    <td><%= button_to "削除する",item_review_path(review.id),method: :delete, class: 'btn btn-outline-secondary', data: {confirm: "削除しますか？"} %></td>
                     <td><%= button_to "編集する",edit_admin_item_review_path(@item.id,review.id),method: :get, class: 'btn btn-outline-secondary' %></td>
                   </tr>
                 </table>

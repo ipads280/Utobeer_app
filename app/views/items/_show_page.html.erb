@@ -27,7 +27,7 @@
                 <table>
 　　　　　　　　  <tr>
                     <td>
-                      <%= link_to item_review_path(review.id),method: :delete, class: "btn btn-danger" do %>
+                      <%= link_to item_review_path(review.id),method: :delete, class: "btn btn-danger", data: {confirm: "削除しますか？"} do %>
                         <i class="fa-solid fa-trash-can"></i>
                       <%end%>
                     </td>
