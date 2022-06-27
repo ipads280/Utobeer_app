@@ -1,4 +1,5 @@
 class Admin::ArcsController < ApplicationController
+  before_action :authenticate_admin!
   
   def index
     @arc=Arc.new
