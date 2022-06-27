@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'searches/search'
   # 顧客用
   # URL /users/sign_in ...
   devise_for :users, controllers: {
@@ -12,7 +11,7 @@ Rails.application.routes.draw do
   devise_for :admin, controllers: {
     sessions: "admin/sessions"
   }
-  
+  get 'searches/search'
   
 
   namespace :admin do

@@ -118,3 +118,10 @@ input[type="email"] {
   height: auto;
   max-width: 100%;
 }
+
+/*top*/
+.toppage-image{
+  background-image: url("beer.jpg");
+  background-size: cover;
+  
+}

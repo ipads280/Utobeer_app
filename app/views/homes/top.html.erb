@@ -1,50 +1,138 @@
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center  toppage-image">
+  <div class="col-md-5 p-lg-5 mx-auto my-5">
+    <h1 class="display-4 fw-normal" style="color:#383E2C;">ゆーとびあへようこそ！</h1>
+  </div>
+</div>
 
-    <div class="container marketing">
-       
-      <div class="row featurette ">
-        <div class="col-md-7 my-auto p-4">
-
-        　<h1 class="featurette-heading fw-normal lh-1 float-end">まだ知らないお酒を見つけませんか</h1>
-          <div class="text-center">
-            <%= link_to new_user_registration_path,class: "btn btn-primary" do %>
-              今すぐ始める
-            <%end%>
-          <p>
-            ビール専門のレビューサイト<br>
-            最高の一杯を<br>
-            探しましょう
-          </p>
+    <div class="row mb-2">
+      <h3 class="text-center">人気ビール  </h3>
+      <% @all_ranks.each.each.with_index do |item,i|%>
+      <div class="col-md-6">
+      
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-primary">評価の高いビール</strong>
+            <h3 class="mb-0"><%= item.item_name %></h3>
+            <div class="mb-1 text-muted"><%= item.maker.makers_name %></div>
+            <p class="card-text mb-auto">もっとも評価の高いビールです！<br>下のボタンから詳細を確認しましょう！</p>
+            <div><%=link_to "詳細を見る",item_path(item)%> </div>
           </div>
-      </div>
-
-        <div class="col-md-5 my-auto" >
-          <%=image_tag 'big_logo.png',class: "img-responsive"%>
-        </div>
-
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading fw-normal lh-1">今日のビールは決まりましたか？</h2>
-          <p class="lead">今日のビールをガチャで決めましょう！</p>
-
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            ガチャを回す
-          </button>
-
-        </div>
-        <div class="col-md-5 order-md-1">
-          <%=image_tag 'beer_glass.png',:size=>'200×100',class: "img-responsive"%>
+          <div class="col-auto d-none d-lg-block">
+            <%= image_tag item.image,class: "card-img-toppage" %>
+          </div>
         </div>
       </div>
+      <%end%>
+      
+    </div>
 
-      <hr class="featurette-divider">
+    <div class="row g-5">
+      <div class="col-md-8">
+        <h3 class="pb-4 mb-4 fst-italic border-bottom">
+          Firehoseから
+        </h3>
+        <article class="blog-post">
+          <h2 class="blog-post-title mb-1">ブログの投稿例</h2>
+          <p class="blog-post-meta">2021/01/01　投稿者：<a href="#">管理人</a></p>
+          <p>このブログ投稿では、Bootstrapでサポートやスタイル設定されたいくつかの異なるタイプのコンテンツを示している。基本的な文字の体裁、リスト、表、画像、コードなどはすべて期待どおりに対応されている。</p>
+          <hr>
+          <p>これは、いくつかの追加の段落プレースホルダーコンテンツ。利用可能なスペースを埋め、テキストの長いスニペットが周囲のコンテンツにどのように影響するかを示すために作成されている。デモの流れを維持するためにこれが頻繁に繰り返されるため、これと全く同じテキストの文字列に注意すること。</p>
+          <h2>引用</h2>
+          <p>これは、実際のブロック引用の例：</p>
+          <blockquote class="blockquote">
+            <p>引用されたテキストはここにある。</p>
+          </blockquote>
+          <p>これは、いくつかの追加の段落プレースホルダーコンテンツ。利用可能なスペースを埋め、テキストの長いスニペットが周囲のコンテンツにどのように影響するかを示すために作成されている。デモの流れを維持するためにこれが頻繁に繰り返されるため、これと全く同じテキストの文字列に注意すること。</p>
+          <h2>リストの例</h2>
+          <p>これは、いくつかの追加の段落プレースホルダーコンテンツ。これは、全体で使用されている他の非常に反復的な本文テキストのちょっと短いバージョン。これは順番のないリストの例：</p>
+          <ul>
+            <li>最初のリストアイテム</li>
+            <li>より長い説明がある2番目のリストアイテム</li>
+            <li>それを閉じるための3番目のリストアイテム</li>
+          </ul>
+          <p>そしてこれは順番付きのリスト：</p>
+          <ol>
+            <li>最初のリストアイテム</li>
+            <li>より長い説明がある2番目のリストアイテム</li>
+            <li>それを閉じるための3番目のリストアイテム</li>
+          </ol>
+          <p>そしてこれは定義リスト：</p>
+          <dl>
+            <dt>HyperText Markup Language (HTML)</dt>
+            <dd>Webページのコンテンツを記述および定義するために使用される言語</dd>
+            <dt>Cascading Style Sheets (CSS)</dt>
+            <dd>Webコンテンツの外観を説明するために使用</dd>
+            <dt>JavaScript (JS)</dt>
+            <dd>高度なWebサイトおよびアプリケーションの構築に使用されるプログラミング言語</dd>
+          </dl>
+          <h2>インラインHTML要素</h2>
+          <p>HTMLは、利用可能なインラインタグの長いリストを定義。その完全なリストは、<a href="https://developer.mozilla.org/ja/docs/Web/HTML/Element" target="_blank" rel="noopener">Mozilla DeveloperNetwork</a>にある。</p>
+          <ul>
+            <li>テキストを太字にするには、<code class="language-plaintext highlighter-rouge">&lt;strong&gt;</code> を使用</li>
+            <li>テキストをイタリック体にするには、<code class="language-plaintext highlighter-rouge">&lt;em&gt;</code> を使用</li>
+            <li><abbr title="HyperText Markup Language">HTML</abbr>などの略語では、<code>&lt;abbr&gt;</code> を使用し、フレーズ全体にオプションの <code class="language-plaintext highlighter-rouge">title</code> 属性を付ける必要がある</li>
+            <li><cite>--Mark Otto</cite>のような引用符は、<code class="language-plaintext highlighter-rouge">&lt;cite&gt;</code> を使用する必要がある</li>
+            <li><del>削除</del>テキストは <code class="language-plaintext highlighter-rouge">&lt;del&gt;</code> を使用し、<ins>挿入</ins>テキストは <code class="language-plaintext highlighter-rouge">&lt;ins&gt;</code> を使用する必要がある</li>
+            <li>上付き文字の<sup>テキスト</sup>は <code class="language-plaintext highlighter-rouge">&lt;sup&gt;</code> を使用し、下付き文字の<sub>テキスト</sub>は <code class="language-plaintext highlighter-rouge">&lt;sub&gt;</code> を使用</li>
+          </ul>
+          <p>これらの要素のほとんどは、ブラウザによってスタイル設定されているが、変更はほとんどない。</p>
+          <h2>見出し</h2>
+          <p>これは、いくつかの追加の段落プレースホルダーコンテンツ。利用可能なスペースを埋め、テキストの長いスニペットが周囲のコンテンツにどのように影響するかを示すために作成されている。デモの流れを維持するためにこれが頻繁に繰り返されるため、これと全く同じテキストの文字列に注意すること。</p>
+          <h3>小見出し</h3>
+          <p>これは、いくつかの追加の段落プレースホルダーコンテンツ。利用可能なスペースを埋め、テキストの長いスニペットが周囲のコンテンツにどのように影響するかを示すために作成されている。デモの流れを維持するためにこれが頻繁に繰り返されるため、これと全く同じテキストの文字列に注意すること。</p>
+          <pre><code>コードブロックの例</code></pre>
+          <p>これは、いくつかの追加の段落プレースホルダーコンテンツ。これは、全体で使用されている他の非常に反復的な本文テキストのちょっと短いバージョン。</p>
+          </article>
+        
+      
+      </div>
 
-      <div class="container marketing">
-      <!-- カルーセルの下にある3列のテキスト -->
+      <div class="col-md-4">
+        <div class="position-sticky" style="top: 2rem;">
+          
+          <div class="p-4 mb-3  rounded" style="background-color:#B1B5A9;">
+            <h4 class="fst-italic">今日のビールガチャ！</h4>
+            <p class="mb-0">今日飲むビールをガチャで決めましょう！！</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              ガチャを回す
+          　</button>
+          </div>
+          
+          <div class="p-4">
+            <h4 class="fst-italic">最近のレビュー</h4>
+            <ol class="list-unstyled mb-0">
+              <li><a href="#">2021年01月</a></li>
+              <li><a href="#">2020年12月</a></li>
+              <li><a href="#">2020年11月</a></li>
+              <li><a href="#">2020年10月</a></li>
+              <li><a href="#">2020年09月</a></li>
+              <li><a href="#">2020年08月</a></li>
+              <li><a href="#">2020年07月</a></li>
+              <li><a href="#">2020年06月</a></li>
+              <li><a href="#">2020年05月</a></li>
+              <li><a href="#">2020年04月</a></li>
+              <li><a href="#">2020年03月</a></li>
+              <li><a href="#">2020年02月</a></li>
+            </ol>
+          </div>
+          <div class="p-4">
+            <h4 class="fst-italic">他の場所</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
 
       <div class= "row text-center">
   　　　　<div class = "col-md-12 mt-1">
@@ -98,90 +186,4 @@
       <%end%>
     </div>
 
-    </div>
-
-     <hr class="featurette-divider">
-
-    <div class="container marketing">
-      <!-- カルーセルの下にある3列のテキスト -->
-
-      <div class= "row text-center">
-  　　　　<div class = "col-md-12 mt-1">
-  　　　 　<h2>評価の高いビール</h2>
-  　　　　</div>
-    　　　</div>
-    　</div>
-
-
-      <div class="row">
-        <% @all_ranks.each.each.with_index do |item,i|%>
-          <div class="col-lg-4 mx-auto">
-            <div class="card" style="background-color:#B1B5A9;">
-              <h3 class="card-header"><i class="fa-solid fa-crown"></i>第<%=i+1%>位</h3>
-              <%= image_tag item.image,class: "card-img-toppage" %>
-              <div class="card-body">
-
-                <div class="card-content">
-
-                <div class="card-body">
-                  <h5 class="card-title"><%= item.item_name %></h5>
-                  <p class="card-text"><%=item.item_text %></p>
-        　　　　　　　　<div class="card-content">
-         　　　　　　　　 <div class="content average-score">
-            　　　　　　<div class="star-rating mb-2">
-              　　　　　　<div class="star-rating-front" style="width: <%= item.review_score_percentage %>%"><nobr>★★★★★</nobr></div>
-             　　　　　　　　 <div class="star-rating-back"><nobr>★★★★★</nobr></div>
-            　　　　　　</div>
-            　　　　　　<div class="average-score-display ml-3 pt-2">
-             　　　　　　 <%= item.avg_score %>点
-           　　　　　　 </div>
-        　　　　　　　　  </div>
-        　　　　　　　</div>
-      　　　　　　</div>
-              </div>
-
-                 <%=link_to item_path(item),class: "btn btn-primary" do %>
-                  商品を見る
-                <%end%>
-          </div>
-        </div>
-
-      </div>
-      <%end%>
-    </div>
-
-  </div>
-</div>
-
-
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">ガチャ結果</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-
-      <% @random.each do |item| %>
-      <h2 class="card-title mx-auto"><%= item.item_name %>が選ばれました！！</h2>
-      <div class="card mx-auto" style="width: 20rem; height:rem;">
-        <div class="card-body">
-          <%= image_tag item.image,class: "card-img-top" %>
-        </div>
-      </div>
-
-      <div class="modal-footer mx-auto">
-        <%=link_to root_path,class: "btn btn-primary" do %>
-          トップに戻る
-        <%end%>
-
-        <%=link_to item_path(item),class: "btn btn-primary" do %>
-          ビールの詳細を見る
-        <%end%>
-      <%end%>
-      </div>
-    </div>
-  </div>
-</div>
+    
