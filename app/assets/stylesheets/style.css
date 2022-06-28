@@ -120,8 +120,3 @@ input[type="email"] {
 }
 
 /*top*/
-.toppage-image{
-  background-image: image-url("beer.jpg");
-  background-size: cover;
-  
-}
