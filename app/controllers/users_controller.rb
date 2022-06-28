@@ -23,7 +23,7 @@ class UsersController < ApplicationController
   def update
     user=current_user
     user.update(user_params)
-    redirect_to user_path(user.id)
+    redirect_to user_path(user.id), notice: "編集成功しました"
   end
 
   def withdrawal

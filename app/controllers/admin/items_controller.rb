@@ -16,7 +16,7 @@ class Admin::ItemsController < ApplicationController
     @item=Item.new(item_params)
     if @item.valid?
       @item.save
-      redirect_to admin_items_path
+      redirect_to admin_items_path, notice: "投稿しました"
     else
       @makers=Maker.all
       @genres=Genre.all
@@ -46,7 +46,13 @@ class Admin::ItemsController < ApplicationController
   def update
     item=Item.find(params[:id])
     item.update(item_params)
-    redirect_to admin_item_path(item.id)
+    redirect_to admin_item_path(item.id), notice: "編集成功しました"
+  end
+  
+  def destroy
+    item=Item.find(params[:id])
+    item.destroy
+    redirect_to admin_items_path, notice: "削除しました"
   end
   
   private

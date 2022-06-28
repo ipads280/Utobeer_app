@@ -19,7 +19,7 @@ class ReviewsController < ApplicationController
     @review.item_id=item.id
     if @review.valid?
       @review.save
-      redirect_to item_path(item)
+      redirect_to item_path(item), notice: "投稿しました"
     else
       render :new
     end
@@ -30,7 +30,7 @@ class ReviewsController < ApplicationController
     @review=Review.find_by(id: params[:id])
     if
       @review.update(review_params)
-      redirect_to item_path(item)
+      redirect_to item_path(item), notice: "編集成功しました"
     else
       render :edit
     end
@@ -40,7 +40,7 @@ class ReviewsController < ApplicationController
     item=Item.find(params[:id])
     review=Review.find_by(item_id: params[:id],id: params[:item_id],)
     review.destroy
-    redirect_to item_path(item)
+    redirect_to item_path(item), notice: "削除しました"
   end
 
   private
