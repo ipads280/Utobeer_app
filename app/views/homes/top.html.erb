@@ -7,7 +7,7 @@
 </div>
 
     <div class="row mb-2">
-      <h3 class="text-center">人気ビール  </h3>
+      <h3 class="text-center">いいねが多いビール  </h3>
       <% @all_ranks.each do |item|%>
       <div class="col-md-6">
 
@@ -16,7 +16,7 @@
             <strong class="d-inline-block mb-2 text-primary">評価の高いビール</strong>
             <h3 class="mb-0"><%= item.item_name %></h3>
             <div class="mb-1 text-muted"><%= item.maker.makers_name %></div>
-            <p class="card-text mb-auto">評価の高いビールです！<br>下のボタンから詳細を確認しましょう！</p>
+            <p class="card-text mb-auto">評価のビールです！<br>下のボタンから詳細を確認しましょう！</p>
             <div><%=link_to "詳細を見る",item_path(item)%> </div>
           </div>
           <div class="col-auto d-none d-lg-block">
