@@ -6,12 +6,12 @@
   <%= image_tag 'big_logo.png',class: "img-responsive mx-auto" %>
 </div>
 
-    <div class="row mb-2">
+    <div class="row">
       <h3 class="text-center">いいねが多いビール  </h3>
       <% @all_ranks.each do |item|%>
       <div class="col-md-6">
 
-        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color:#D6CFA9;">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-primary">評価の高いビール</strong>
             <h3 class="mb-0"><%= item.item_name %></h3>
@@ -45,10 +45,9 @@
           
         <hr>
 
-        <div class="card mb-3" style="max-width: 540px;">
-          <div class="row g-0">
-            <div class="col-md-8">
-              <div class="card-body">
+        <div class="card mb-3" style="width:100%;">
+          <div class="row g-0 text-center">
+              <div class="card-body" style="background-color:#D6CFA9;">
                 <h5 class="card-title">新規登録/ログインはこちら！</h5>
                 <div class="card-text">
                   <%= link_to new_user_registration_path,class: "btn btn-primary" do %>
@@ -60,7 +59,6 @@
                   <%end%>
                 </div>
               </div>
-            </div>
           </div>
         </div>
         
