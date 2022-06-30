@@ -16,7 +16,7 @@ class Admin::ItemsController < ApplicationController
     @item=Item.new(item_params)
     if @item.valid?
       @item.save
-      redirect_to admin_items_path, notice: "投稿しました"
+      redirect_to admin_item_path(@item), notice: "投稿しました"
     else
       @makers=Maker.all
       @genres=Genre.all
