@@ -10,6 +10,12 @@ class HomesController < ApplicationController
    #limit(2)で最大表示数を二つに制限する
    #pluck(:item_id)で最後に:item_idカラムのみを数字で取り出す指定
 
+   @star_ranks = Item.find(Review.group(:star).order('avg(star) desc').limit(2).pluck(:item_id))
+   #groupメソッドで、指定したカラムのデータの種類ごとにデータをまとめる。
+   #ここでは、Review.group(:star)で種類ごとにわける
+   #グループ分けしたものを番号の多い順に並び替える
+   
+
    @random = Item.order("RAND()").limit(1)
   end
 
