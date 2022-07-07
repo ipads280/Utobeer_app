@@ -51,6 +51,7 @@ h1,h2,h3,h4,h5,h6{
 
 /*ここから　ボックスの大きさ設定 */
 
+
 input[type="text"] {
         width: 100%;
         height: 30px;
