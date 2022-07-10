@@ -56,7 +56,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'kaminari'
-gem 'ransack'
 
 #以下デプロイにために追加したgemfile
 gem 'dotenv-rails'

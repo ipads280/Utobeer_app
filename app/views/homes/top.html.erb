@@ -106,7 +106,7 @@
             <ol class="list-unstyled mb-0">
               <%@reviews.each do |review| %>
               <li>
-                <%=link_to item_path(review.item) do %>
+                <%=link_to item_path(review.item),class: "link-dark" do %>
                   <h6><%=review.item.item_name%></h6>
                   <p>by<%=review.user.name%></p><br>
                 <%end%>
