@@ -39,6 +39,8 @@ Rails.application.routes.draw do
   # 論理削除用のルーティング
   patch '/users/:id/withdrawal' => 'users#withdrawal', as: 'withdrawal'
   
+  resources :ranks, only: [:index]
+  
   resources :items, only: [:index, :show] do
     resources :reviews, only: [:create,:new,:update,:destroy,:edit] 
     resource :favorites, only: [:create, :destroy]
