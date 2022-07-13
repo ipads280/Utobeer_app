@@ -16,7 +16,7 @@ class HomesController < ApplicationController
    #グループ分けしたものを番号の多い順に並び替える
    
 
-   @random = Item.order("RAND()").limit(1)
+   @random = Item.order("RANDOM()").limit(1)
   end
 
   def about
